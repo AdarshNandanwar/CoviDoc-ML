@@ -2,7 +2,7 @@
 Flask Backend server made using Keras and Tensorflow for accessing ML features of hte CoviDoc App.
 ## Requirements
 To run the server, you will need Flask, Keras, TensorFlow, matplotlib and some other packages.
-### Installation
+## Installation
 Clone this repository into your system
 ```bash
 git clone https://github.com/AdarshNandanwar/CoviDoc-ML.git
@@ -24,7 +24,7 @@ Run the server.
 python app.py
 ```
 ## API
-Supported Media Types
+**Supported Media Types**
 ```
 multipart/form-data
 ```
