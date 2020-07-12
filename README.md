@@ -24,7 +24,42 @@ Run the server.
 python app.py
 ```
 ## API
-POST http://127.0.0.1:5000/analyze-xray/  
-POST http://127.0.0.1:5000/analyze-video/
+Supported Media Types
+```
+multipart/form-data
+```
+#### POST http://127.0.0.1:5000/analyze-xray/
+**Form Parameters**
+```
+file: xray image in jpeg, jpg orpng format
+```
+**Response**
+```
+{
+    "data": {
+        "prediction": 0
+    },
+    "message": "",
+    "status": "success"
+}
+```
+#### POST http://127.0.0.1:5000/analyze-video/
+**Form Parameters**
+```
+file: video feed of finger with torch on in mp4 format
+```
+**Response**
+```
+{
+    "data": {
+        "bpm": 84,
+        "bpm_disc": 84,
+        "spo2": 98,
+        "spo2_disc": "normal"
+    },
+    "message": "",
+    "status": "success"
+}
+```
 ## Deployed Server
 Currently not deployed
