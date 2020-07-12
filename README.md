@@ -24,7 +24,7 @@ Run the server.
 python app.py
 ```
 ## API
-POST http://127.0.0.1:5000/analyze-xray/
+POST http://127.0.0.1:5000/analyze-xray/  
 POST http://127.0.0.1:5000/analyze-video/
 ## Deployed Server
 Currently not deployed
