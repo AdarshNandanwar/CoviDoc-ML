@@ -1,5 +1,8 @@
 # CoviDoc-ML
-Flask Backend server made using Keras and Tensorflow for accessing ML features of hte CoviDoc App.
+Flask Backend server made using Keras and Tensorflow for accessing ML features of the CoviDoc App.  
+Algorithm based on the paper:  
+Determination of SpO2 and Heart-rate using Smartphone Camera, Kanva et al.  
+https://www.iiitd.edu.in/noc/wp-content/uploads/2017/11/06959086.pdf
 ## Requirements
 To run the server, you will need Flask, Keras, TensorFlow, matplotlib and some other packages.
 ## Installation
@@ -61,5 +64,3 @@ file: video feed of finger with torch on in mp4 format
     "status": "success"
 }
 ```
-## Deployed Server
-Currently not deployed
