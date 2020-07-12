@@ -109,4 +109,4 @@ def analyze_video():
         return "Send POST request here for video prediction"
   
 if __name__ == '__main__': 
-   app.run()
+   app.run(port = 4200)
