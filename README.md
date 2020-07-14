@@ -1,8 +1,12 @@
 # CoviDoc-ML
 Flask Backend server made using Keras and Tensorflow for accessing ML features of the CoviDoc App.  
+  
 Algorithm based on the paper:  
 Determination of SpO2 and Heart-rate using Smartphone Camera, Kanva et al.  
-https://www.iiitd.edu.in/noc/wp-content/uploads/2017/11/06959086.pdf
+https://www.iiitd.edu.in/noc/wp-content/uploads/2017/11/06959086.pdf  
+  
+Main repo  
+https://github.com/namit-chandwani/CoviDoc
 ## Requirements
 To run the server, you will need Flask, Keras, TensorFlow, matplotlib and some other packages.
 ## Installation
@@ -31,10 +35,10 @@ python app.py
 ```
 multipart/form-data
 ```
-#### POST http://127.0.0.1:5000/analyze-xray/
+#### POST http://127.0.0.1:4200/analyze-xray/
 **Form Parameters**
 ```
-file: xray image in jpeg, jpg orpng format
+file: xray image in jpeg, jpg or png format
 ```
 **Response**
 ```
@@ -46,7 +50,7 @@ file: xray image in jpeg, jpg orpng format
     "status": "success"
 }
 ```
-#### POST http://127.0.0.1:5000/analyze-video/
+#### POST http://127.0.0.1:4200/analyze-video/
 **Form Parameters**
 ```
 file: video feed of finger with torch on in mp4 format
